@@ -1,0 +1,30 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Armstrong Number - Range</title>
+<style type="text/css"></style>
+</head>
+<body>
+	<script type="text/javascript">
+		// Armstrong Number Between Particular Range Given By User
+		var r1 = prompt("Enter Lower Number Of Range");
+		var r2 = prompt("Enter Upper Number Of Range");
+		
+		document.write(`<h1>Armstrong Number Between ${r1} - ${r2}</h1>`);
+
+		for(var i = r1 ;i <= r2; i++){
+			var sum = 0;
+			var noOfdigits = i.toString().length;
+			var temp = i;
+			
+			while(temp > 0){ 
+			var digit = temp % 10;
+			sum += digit ** noOfdigits;
+			temp = parseInt(temp / 10);
+		}
+			if(i == sum)
+			document.write(`<h2>${i}</h2>`);
+		};	
+	</script>
+</body>
+</html>

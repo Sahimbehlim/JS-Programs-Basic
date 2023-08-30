@@ -1,0 +1,26 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Check Palindrome String</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Program To Check Palindrome String
+
+		var string = prompt("Enter String"); //m[0] a[1] d[2] a[3] m[4]
+		var len = string.length; //5
+		var msg = "It Is A Palindorme";
+		
+		for(var i = 0; i < len/2; i++){
+			if(string[i] != string[len - 1 - i]){ 
+				msg = "It Is Not A Palindorme";
+			}
+		};
+
+		document.write(`<h2>${string} : ${msg}</h2>`);
+	</script>
+</body>
+</html>

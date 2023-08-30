@@ -1,0 +1,24 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>String Contains Substring Or Not</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Check whether a String Contains a Substring Or Not
+		var string = prompt("Enter String");
+		var subString = 'the';
+
+		var check = string.includes(subString);
+		if(check == true){
+			document.write(`<h2>${string} includes '${subString}'</h2>`);
+		}
+		else{
+			document.write(`<h2>${string} does not includes '${subString}'</h2>`);
+		}
+	</script>
+</body>
+</html>

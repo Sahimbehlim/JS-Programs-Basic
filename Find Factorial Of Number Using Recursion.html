@@ -1,0 +1,27 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Factorial - Recursion</title>
+<style type="text/css">
+	
+</style> 
+</head>
+<body>
+	<script type="text/javascript">
+		//JavaScript Program to Find the Factorial of a Number Using Recursion
+		var no = prompt("Enter Number");
+		var fact = 1;
+		function factr(n){
+			if(n>no){
+				return;
+			}
+			var temp = fact;
+			fact = fact * n;
+			n++;
+			factr(n);
+
+		}factr(1);
+		document.write(`The Factorial Of ${no} Is ${fact}`);
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Check Last Digit Same</title>
+<style type="text/css"></style> 
+</head>
+<body>
+	<script type="text/javascript">
+		//Program to Check if the Numbers Have Same Last Digit
+		
+		var no1 = prompt("Enter 1st Number");
+		var no2 = prompt("Enter 2nd Number");
+		var no3 = prompt("Enter 3rd Number");
+		
+		var res1 = no1 % 10;
+		var res2 = no2 % 10;
+		var res3 = no3 % 10;
+
+		if(res1 == res2 && res1 == res3){
+			document.write(`Last Digit Of ${no1}, ${no2}, ${no3} Is Same`);
+		}
+		else{
+			document.write(`Last Digit Of ${no1}, ${no2}, ${no3} Is Not Same`);
+		};
+	</script>
+</body>
+</html>

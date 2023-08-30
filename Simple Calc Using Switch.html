@@ -1,0 +1,44 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Simple Calc Using Switch</title>
+<style type="text/css"></style> 
+</head>
+<body>
+	<script type="text/javascript">
+		//Program to make a simple calculator using switch case in JavaScript
+		var no1 = prompt("Enter 1st Number");
+		var no2 = prompt("Enter 2nd Number");
+		var opr = prompt("Enter + ,- ,* , /");
+		
+		switch(opr){
+		case "+":
+		
+		var res = parseFloat(no1) + parseFloat(no2);
+			document.write(`${no1} + ${no2} = ${res}`);
+		break;
+
+		case "-":
+		
+		var res = no1 - no2;
+			document.write(`${no1} - ${no2} = ${res}`);
+		break;
+
+		case "*":
+		
+		var res = no1 * no2;
+			document.write(`${no1} * ${no2} = ${res}`);
+		break;
+
+		case "/":
+		
+		var res = no1 / no2;
+			document.write(`${no1} / ${no2} = ${res}`);
+		break;
+		
+		default:
+			document.write("Invalid Operator");
+		};
+	</script>
+</body>
+</html>

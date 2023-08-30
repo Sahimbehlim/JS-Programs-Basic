@@ -1,0 +1,25 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Palindrome String, Built-in Func</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Check Palindrome String Using built-in Functions
+		var string = prompt("Enter String");
+		var stringArray = string.split('');
+		var stringArrayRev = stringArray.reverse();
+		var revString = stringArrayRev.join('');
+
+		if(string == revString){
+			document.write(`<h2>${string} : Is A Palindrome String</h2>`);
+		}
+		else{
+			document.write(`<h2>${string} : Is Not A Palindrome String</h2>`);
+		}
+	</script>
+</body>
+</html>

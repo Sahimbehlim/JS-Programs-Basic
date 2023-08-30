@@ -1,0 +1,23 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Convert First Letter - Uppercase</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Program to Convert the First Letter of a String in to Uppercase
+		var string = prompt("Enter Name");
+		document.write(`<h2>String Is : ${string}</h2>`);
+
+		var firstChar = string.charAt(0);
+		var upperCase = firstChar.toUpperCase();
+		var rem = string.slice(1);
+		
+		var newString = upperCase + rem;
+		document.write(`<h2>New String Is : ${newString}</h2`);
+	</script>
+</body>
+</html>

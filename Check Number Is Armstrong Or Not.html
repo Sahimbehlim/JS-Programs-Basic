@@ -1,0 +1,33 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Check Armstrong Number</title>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		/* Check Whether The Number Is Armstrong Or Not 
+		e.g 153 = 1*1*1 + 5*5*5 + 3*3*3 = 153*/
+		
+		var no = prompt("Enter Number");
+		var temp = no;
+		var noOfdigits = no.toString().length;
+		var sum = 0;
+		
+		while(temp > 0){ 
+			var digit = temp % 10; 
+			sum += digit**noOfdigits; 
+			temp = parseInt(temp / 10);
+		};
+		
+		if(no == sum){
+			document.write(`<h2>${no} Is Armstrong Number.</h2>`);
+		}
+		else{
+			document.write(`<h2>${no} Is Not Armstrong Number.</h2>`);
+		}
+	</script>
+</body>
+</html>

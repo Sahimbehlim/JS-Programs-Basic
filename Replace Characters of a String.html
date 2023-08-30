@@ -1,0 +1,23 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Replace Characters</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Program to Replace Characters of a String
+
+		var string = prompt("Enter String");
+		document.write(`<h2>${string}<h2>`);
+
+		var reg = RegExp('Red','gi'); // To Make Changes Globally & Not Case Sensitive
+
+		var rep = string.replace(reg,'Blue');
+		document.write(`<h2>${rep}<h2>`);
+
+	</script>
+</body>
+</html>

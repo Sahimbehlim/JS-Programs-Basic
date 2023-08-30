@@ -1,0 +1,24 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Random Number</title>
+<style type="text/css">
+</style> 
+</head>
+<body>
+	<script type="text/javascript">
+		//JavaScript Program to Generate a Random Number using Math.random() Function
+
+		//Formula For Generating Random Number = Math.random() * (Highest No - Lowest No) + Lowest No
+		var x = Math.random() * (100 - 1) + 1;
+			document.write(`Random Value Between 1 to 100 : ${Math.floor(x)}<br><br>`);
+		
+		//For Integer Random Number Use Math.floor()
+	
+		// For 4 Digit OTP Purpose
+		var y = Math.random(); 
+			y = y * 10000; 
+			document.write("Otp : " + Math.floor(y));
+	</script>
+</body>
+</html>

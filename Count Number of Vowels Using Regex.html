@@ -1,0 +1,19 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Number of Vowels - Regex</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Count the Number of Vowels in a String using Regex 
+		var string = prompt("Enter String");
+		const reg = /[aeiou]/gi;
+		var chars = string.match(reg);
+		
+		document.write(`<h2>Number Of Vowels In ${string} Is ${chars.length}</h2>`);
+	</script>
+</body>
+</html>

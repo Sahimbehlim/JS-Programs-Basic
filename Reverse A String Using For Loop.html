@@ -1,0 +1,25 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Reverse String - For Loop</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Program to Reverse A String Using For Loop
+
+		var string = prompt("Enter A String");
+		document.write(`<h2>String : ${string}</h2>`);
+
+		var len = string.length;
+		var revString = '';
+
+		for(var i = len - 1; i >= 0; i--){
+			revString += string[i];
+		};
+		document.write(`<h2>Reverse String : ${revString}</h2>`);
+	</script>
+</body>
+</html>

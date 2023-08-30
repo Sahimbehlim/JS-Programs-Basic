@@ -1,0 +1,32 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Check String Starts Or Ends With</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//Check whether a String Starts and Ends with Certain Characters
+		var string = prompt("Enter String");
+		var startLetter = prompt(`Enter Starting Letter Of String`);
+		var endLetter = prompt(`Enter Ending Letter Of String`);
+		var testStart = string.startsWith(startLetter);
+		var testEnds = string.endsWith(endLetter);
+		
+		if(testStart == true && testEnds == true){
+			console.log(`${string} Starts With ${startLetter} & Ends With ${endLetter}`);
+		}
+		else if(testStart == true && testEnds == false){
+			console.log(`${string} Starts With ${startLetter} But Not Ends With ${endLetter}`);
+		}
+		else if(testStart == false && testEnds == true){
+			console.log(`${string} Not Starts With ${startLetter} But Ends With ${endLetter}`);
+		}
+		else{
+			console.log(`${string} Neither Starts With ${startLetter} Nor Ends With ${endLetter}`);
+		}
+	</script>
+</body>
+</html>
